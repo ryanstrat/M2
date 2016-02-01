@@ -34,7 +34,7 @@ public class Person1 {
 		String reversed = new String(input);
 
 		for (int i = 0; i < input.length(); i++){
-			reversed[(i - 2)%input.length] = input[i]; 
+			reversed[(i - 2)%input.length()] = input.charAt(i); 
 		}
 
 		return reversed;
