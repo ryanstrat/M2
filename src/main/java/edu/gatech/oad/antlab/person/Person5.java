@@ -5,7 +5,7 @@ package edu.gatech.oad.antlab.person;
  *  returns their name and a
  *  modified string 
  *  
- *  @author Bob
+ *  @author Kanan Patel
  *  @version 1.1
  */
 public class Person5 {
@@ -19,6 +19,7 @@ public class Person5 {
   public Person5(String pname) {
     name = pname;
   }
+	// uhhhhh
   	/**
 	 * This method should take the string
 	 * input and return its characters rotated
