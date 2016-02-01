@@ -24,6 +24,7 @@ jar {
             'Class-Path' : 'lib/resources.jar'
     }        
 
+    destinationDir = file(".")
     archiveName = 'M2.jar'
 }
 
