@@ -1,4 +1,6 @@
 package edu.gatech.oad.antlab.person;
+import java.util.List;
+import java.util.Arrays;
 
 /**
  *  A simple class for person 2
@@ -32,7 +34,7 @@ public class Person2 {
 	private String calc(String input) {
 	  //Person 2 put your implementation here
       List<String> inputLetters = Arrays.asList(input.split(""));
-      Collections.shuffle(letters);
+      Collections.shuffle(inputLetters);
       String toReturn = "";
       for (String letter: inputLetters) {
           toReturn += letter;
