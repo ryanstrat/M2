@@ -31,7 +31,7 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-		String reversed = new String(input)
+		String reversed = new String(input);
 
 		for (int i = 0; i < input.length(); i++){
 			reversed[(i - 2)%input.length] = input[i]; 
