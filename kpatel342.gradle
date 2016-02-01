@@ -1,0 +1,31 @@
+apply plugin: 'java'
+apply plugin: 'application'
+defaultTasks 'jar'
+
+
+//variables for M2
+version = '1.0'
+sourceCompatibility = 1.8
+mainClassName='AntLabMain'
+
+dependencies {
+    compile files('lib/resources.jar')
+}
+
+//contents of jar file
+jar  {
+  manifest {
+     attributes  'Implementation-Title' : 'Kanan Patel' ,
+                 'Implementation-Version' : version,
+                 'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain'
+                 'Class-Path' : 'lib/resources.jar' 
+    }
+
+    destinationDir = file(".")
+    archiveName = 'M2.jar'
+}
+
+//location for repository
+repositories {
+	mavenCentral()
+}
