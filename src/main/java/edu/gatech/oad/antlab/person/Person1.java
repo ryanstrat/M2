@@ -39,7 +39,6 @@ public class Person1 {
 
 		return new String(reversed);
 
-	  return null;
 	}
 	
 	/**
