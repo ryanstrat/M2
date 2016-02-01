@@ -5,7 +5,7 @@ package edu.gatech.oad.antlab.person;
  *  returns their name and a
  *  modified string 
  *  
- *  @author Bob
+ *  @author Kanan Patel
  *  @version 1.1
  */
 public class Person5 {
@@ -19,6 +19,7 @@ public class Person5 {
   public Person5(String pname) {
     name = pname;
   }
+	// uhhhhh
   	/**
 	 * This method should take the string
 	 * input and return its characters rotated
@@ -30,8 +31,14 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+        char[] array = input.toCharArray();
+        String ans = "";
+        for (int i = 2; i < input.length(); i++) {
+            ans = ans + array[i];
+        }
+        ans = ans + array[0] + array[1];
+        
+        return ans;
 	}
 	
 	/**

@@ -31,15 +31,14 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-		String reversed = new String(input)
+		char[] reversed =  input.toCharArray();
 
 		for (int i = 0; i < input.length(); i++){
-			reversed[(i - 2)%input.length] = input[i]; 
+			reversed[(i - 2)%input.length()] = input.charAt(i); 
 		}
 
-		return reversed;
+		return new String(reversed);
 
-	  return null;
 	}
 	
 	/**
