@@ -15,7 +15,7 @@ dependencies {
 //contents of jar file
 jar  {
   manifest {
-     attributes  'Implementation-Title' : 'Kanan Patel' ,
+     attributes  'Implementation-Title' : 'Kanan Patel',
                  'Implementation-Version' : version,
                  'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain'
                  'Class-Path' : 'lib/resources.jar' 
