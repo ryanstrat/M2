@@ -1,1 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'application'
 
+defaultTasks 'jar'
+
+sourceCompatibility = 1.8
+version = 1.0
+mainClassName = 'AntLabMain'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title' : 'Thomas Light',
+                'Implementation-Version' : version,
+                'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+                'Class-Path' : 'lib/resources.jar'
+    }
+    destinationDir = file('.')
+    archiveName = 'M2.jar'
+}
+
+dependencies {
+    compile files('lib/resources.jar')
+}
+
+repositories {
+    mavenCentral()
+}
